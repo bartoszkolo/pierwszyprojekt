@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+ {% block content %}
+ 
+ <div class="col-sm-12" style='text-align: center'>
+ <h1>Jesczcze jeden krok. Proszę wypełnij formularz.</h1>
+
+        <h1>Zarejestruj się!</h1>
+            <form method='POST' action=''> {% csrf_token%}
+            {{ form.as_p }}
+            <input type='submit' value='Złóż zamówienie' class='btn btn-success'>
+                
+                
+            </form>
+ </div>
+ 
+ 
+ {% endblock %}

@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+   
+            
+{% block jumbotron %}
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Witaj, na mojej stronie!</h1>
+        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Więcej &raquo;</a></p>
+      </div>
+    </div>
+{% endblock %}
+
+
+ {% block content %}
+ 
+         <div class="col-sm-3">
+          <h2>Nagłówek</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">Zobacz więcej.. &raquo;</a></p>
+        </div>
+        <div class="col-sm-3">
+          <h2>Nagłówek</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">Zobacz więcej.. &raquo;</a></p>
+       </div>
+        <div class="col-sm-3">
+          <h2>Nagłówek</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-default" href="#" role="button">Zobacz więcej.. &raquo;</a></p>
+        </div>
+        <div class="col-sm-3">
+                                
+                        <h2>Kurs Programowania</h2>
+                        <p> Zacznij przygodę z programowaniem!</p>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            
+                 <input type="hidden" name="on0" value="Kurs"><select class="form-control" name="os0">
+             
+                    <option value="Podstawowy">Podstawowy 99,00 PLN</option>
+                    <option value="Podstawowy +">Podstawowy+ 149,00 PLN</option>
+                    <option value="Zaawansowany">Zaawansowany 199,00 PLN</option>
+            </select> 
+            
+                    
+            <input type="hidden" name="currency_code" value="PLN">
+            <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+            ">
+                </br>
+                
+                
+                <input type='submit' value="Kup Teraz" class='btn btn-primary btn-block'>
+            </form>
+            
+                        
+        </div>        
+                   
+
+ 
+{% endblock %}
